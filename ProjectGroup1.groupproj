@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F5B400E9-9D73-495C-B2D2-F85FFA964AA1}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="China_forever.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Parse.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="China_forever">
+        <MSBuild Projects="China_forever.dproj"/>
+    </Target>
+    <Target Name="China_forever:Clean">
+        <MSBuild Projects="China_forever.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="China_forever:Make">
+        <MSBuild Projects="China_forever.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Parse">
+        <MSBuild Projects="Parse.dproj"/>
+    </Target>
+    <Target Name="Parse:Clean">
+        <MSBuild Projects="Parse.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Parse:Make">
+        <MSBuild Projects="Parse.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="China_forever;Parse"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="China_forever:Clean;Parse:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="China_forever:Make;Parse:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

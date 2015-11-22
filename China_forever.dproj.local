@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Users\administrator\Documents\RAD Studio\Projects\Unit1.pas=G:\Парсер taobao.com\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.189,C:\Projects\Белорус Алексей\Project1.dproj=C:\Projects\Белорус Алексей\China_forever.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Users\administrator\Documents\RAD Studio\Projects\Unit1.dfm=G:\Парсер taobao.com\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dproj,C:\Users\administrator\Documents\RAD Studio\Projects\Project1.dproj=G:\Парсер taobao.com\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.385,=C:\Projects\Белорус Алексей\PerlRegEx.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.753,=C:\Projects\Белорус Алексей\pcre.pas</Transaction>
+  </Transactions>
+</BorlandProject>
